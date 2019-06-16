@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Dialog for adding new person -->
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+    <EditText
+            android:id="@+id/person_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:layout_margin="@dimen/margin_top_16"
+            android:hint="@string/persons_name"
+            android:ems="10"/>
+</layout>

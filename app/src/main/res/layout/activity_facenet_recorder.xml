@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Layout FaceNetRecording  activity -->
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context=".ui.FaceNetRecordingEmbeddingsActivity">
+
+        <include android:id="@+id/my_toolbar"
+                 layout="@layout/toolbar"
+                 app:layout_constraintEnd_toEndOf="parent"
+                 app:layout_constraintTop_toTopOf="parent"
+                 app:layout_constraintStart_toStartOf="parent"/>
+        <TextView
+                android:id="@+id/selectUser"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_right_16"
+                android:text="@string/select_user_for_embedding"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintBottom_toBottomOf="@+id/spinner"
+                app:layout_constraintTop_toTopOf="@+id/spinner"
+        />
+        <Spinner
+                android:id="@+id/spinner"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_top_24"
+                android:layout_marginStart="@dimen/margin_right_16"
+                android:layout_marginEnd="@dimen/margin_left_16"
+                app:layout_constraintStart_toEndOf="@+id/selectUser"
+                app:layout_constraintTop_toBottomOf="@+id/my_toolbar"
+                app:layout_constraintEnd_toStartOf="@+id/buttonAddUser"/>
+
+        <ImageView
+                android:id="@+id/buttonAddUser"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/margin_right_16"
+                android:contentDescription="@string/add_user_button_description"
+                app:srcCompat="@drawable/ic_add"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/spinner"
+                app:layout_constraintBottom_toBottomOf="@+id/spinner"/>
+
+
+        <Button
+                android:id="@+id/buttonEmbeddingAdd"
+                android:text="@string/add_embedding"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/colorGreen"
+                android:textColor="@color/colorWhite"
+                android:layout_marginBottom="@dimen/margin_bottom_48"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"/>
+
+        <ImageView
+                android:id="@+id/imageRGBBitmap"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin_bottom_32"
+                android:contentDescription="@string/embedded_image"
+                app:layout_constraintBottom_toTopOf="@+id/buttonEmbeddingAdd"
+                app:layout_constraintEnd_toEndOf="@+id/recycler"
+                app:layout_constraintStart_toStartOf="@+id/recycler"/>
+
+
+        <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycler"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginTop="@dimen/margin_top_24"
+                android:layout_marginEnd="@dimen/margin_right_16"
+                android:layout_marginStart="@dimen/margin_left_16"
+                android:layout_marginBottom="@dimen/margin_bottom_32"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintBottom_toTopOf="@+id/imageRGBBitmap"
+                app:layout_constraintTop_toBottomOf="@+id/selectUser"/>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

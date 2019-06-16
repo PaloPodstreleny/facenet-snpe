@@ -1,0 +1,45 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorWhite</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:actionOverflowButtonStyle">@style/MyActionButtonOverflow</item>
+    </style>
+
+
+    <style name="MyActionButtonOverflow" parent="android:style/Widget.Holo.Light.ActionButton.Overflow">
+        <item name="android:src">@drawable/ic_filter</item>
+    </style>
+    <style name="TextViewProjectCategories">
+        <item name="android:fontFamily">@font/roboto</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:padding">24dp</item>
+    </style>
+
+    <style name="CardViewCategories">
+        <item name="android:foreground">?android:attr/selectableItemBackground</item>
+        <item name="android:layout_marginLeft">16dp</item>
+        <item name="android:layout_marginRight">16dp</item>
+        <item name="android:layout_marginTop">8dp</item>
+        <item name="android:layout_marginBottom">8dp</item>
+        <item name="android:background">@color/colorWhite</item>
+    </style>
+    
+    <style name="Button.Green" parent="ThemeOverlay.AppCompat">
+        <item name="colorAccent">#9ccc65</item>
+    </style>
+
+    <style name="RuntimeText">
+        <item name="android:layout_marginStart">@dimen/margin_left_24</item>
+        <item name="android:layout_marginEnd">@dimen/margin_right_16</item>
+    </style>
+    
+    <style name="RuntimeImage">
+        <item name="android:layout_marginEnd">@dimen/margin_right_24</item>
+        <item name="android:layout_marginTop">@dimen/margin_top_16</item>
+    </style>
+
+</resources>

@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Layout for runtime info dialog -->
+<layout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable name="cpu" type="Boolean"/>
+        <variable name="gpu" type="Boolean"/>
+        <variable name="dsp" type="Boolean"/>
+        <variable name="aip" type="Boolean"/>
+        <variable name="gpu16" type="Boolean"/>
+    </data>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+        <TextView
+                android:id="@+id/textView"
+                android:text="@string/cpu"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                style="@style/RuntimeText"
+                tools:text="CPU"
+                app:layout_constraintTop_toTopOf="@+id/imageView"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/imageView"
+                app:layout_constraintBottom_toBottomOf="@+id/imageView"/>
+
+        <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@{cpu? @drawable/ic_done_black_24dp : @drawable/ic_cancel_black_24dp }"
+                android:contentDescription="@string/cpu"
+                style="@style/RuntimeImage"
+                tools:src="@drawable/ic_info_outline_black_24dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/textView"
+                app:layout_constraintTop_toTopOf="parent"/>
+        <TextView
+                android:text="@string/gpu"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView2"
+                style="@style/RuntimeText"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintEnd_toStartOf="@+id/imageView2"
+                app:layout_constraintBottom_toBottomOf="@+id/imageView2"
+                app:layout_constraintTop_toTopOf="@+id/imageView2"/>
+
+        <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@{gpu? @drawable/ic_done_black_24dp : @drawable/ic_cancel_black_24dp }"
+                android:contentDescription="@string/gpu"
+                style="@style/RuntimeImage"
+                tools:src="@drawable/ic_info_outline_black_24dp"
+                app:layout_constraintStart_toEndOf="@+id/textView2"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView"/>
+
+
+        <TextView
+                android:id="@+id/textView3"
+                android:text="@string/dsp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                style="@style/RuntimeText"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/imageView3"
+                app:layout_constraintBottom_toBottomOf="@+id/imageView3"
+                app:layout_constraintTop_toTopOf="@+id/imageView3"/>
+        <TextView
+                android:id="@+id/textView4"
+                android:text="@string/aip"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                style="@style/RuntimeText"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/imageView4"
+                app:layout_constraintBottom_toBottomOf="@+id/imageView4"
+                app:layout_constraintTop_toTopOf="@+id/imageView4"/>
+        <TextView
+                android:id="@+id/textView5"
+                android:text="@string/gpu_16"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                style="@style/RuntimeText"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/imageView5"
+                app:layout_constraintBottom_toBottomOf="@+id/imageView5"
+                app:layout_constraintTop_toTopOf="@+id/imageView5"/>
+
+        <ImageView
+                android:id="@+id/imageView3"
+                android:src="@{dsp? @drawable/ic_done_black_24dp : @drawable/ic_cancel_black_24dp }"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/dsp"
+                tools:srcCompat="@drawable/ic_cancel_black_24dp"
+                style="@style/RuntimeImage"
+                app:layout_constraintStart_toEndOf="@+id/textView3"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView2"/>
+        <ImageView
+                android:id="@+id/imageView4"
+                android:src="@{aip? @drawable/ic_done_black_24dp : @drawable/ic_cancel_black_24dp }"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:srcCompat="@drawable/ic_cancel_black_24dp"
+                android:contentDescription="@string/aip"
+                style="@style/RuntimeImage"
+                app:layout_constraintStart_toEndOf="@+id/textView4"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView3"/>
+
+        <ImageView
+                android:id="@+id/imageView5"
+                android:src="@{gpu16? @drawable/ic_done_black_24dp : @drawable/ic_cancel_black_24dp }"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:srcCompat="@drawable/ic_cancel_black_24dp"
+                android:contentDescription="@string/gpu_16"
+                style="@style/RuntimeImage"
+                app:layout_constraintStart_toEndOf="@+id/textView5"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView4"/>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

@@ -1,0 +1,59 @@
+<resources>
+    <string name="app_name">Final project DL</string>
+    <string name="add_number">Add number</string>
+    <string name="infer">Infer</string>
+    <string name="regression_example">Regression example</string>
+    <string name="runtime_info">Runtime info</string>
+    <string name="runtime_selection">Runtime selection</string>
+    <string name="regression_title">Regression example</string>
+    <string name="face_detection_title">Face detection example</string>
+    <string name="available_runtimes">Available runtimes</string>
+    <string name="button_done">Done</string>
+    <string name="button_yes">Yes</string>
+    <string name="button_add">Add</string>
+    <string name="button_cancel">Cancel</string>
+    <string name="cpu">CPU</string>
+    <string name="gpu">GPU</string>
+    <string name="dsp">DSP</string>
+    <string name="aip">AIP</string>
+    <string name="gpu_16">GPU_16</string>
+    <string name="runtime_changed">Runtime changed: %1$s</string>
+    <string name="user_add_to_database">User %1$s successfully added</string>
+    <string name="user_embeddings_added">Embedding successfully added for %1$s</string>
+    <string name="unknown_error">Unknown error occurred</string>
+    <string name="model_loaded">Model was successfully loaded</string>
+    <string name="dog_cats_title">Cats-dogs classification</string>
+    <string name="open_image">open image</string>
+    <string name="image_picker">image picker</string>
+    <string name="model_not_loaded">Model is not loaded yet, please wait a sec</string>
+    <string name="bitmap_convert_problem">Can not convert to bitmap</string>
+    <string name="runtime_in_change">Still setting up previous runtime</string>
+    <string name="model_downloading_progress">\"Model downloading in progress\"</string>
+
+    <!-- facenet -->
+    <string name="facenet_title">Facenet recognition</string>
+    <string name="facenet_face_recording">Face recorder</string>
+    <string name="facenet_recorder">Facenet record and save face</string>
+    <string name="facenet_delete_icon">Facenet delete embeddings</string>
+    <string name="facenet_add_icon">Facenet add embeddings</string>
+    <string name="add_person">Add person</string>
+    <string name="user_already_exists">User already exists</string>
+    <string name="clear_all_embedings">Clear all embeddings</string>
+    <string name="embeddings_delete_message">Are you sure to delete all embeddings?</string>
+    <string name="camera_preview">Camera preview</string>
+    <string name="add_embedding">Add Embedding</string>
+    <string name="user_not_selected">User has to be selected</string>
+    <string name="inferennce_time_short">Inference time: %1$s</string>
+    <string name="inference_time">Network inference time: %1$s ms</string>
+    <string name="runtime_selected">Runtime already selected for: %1$s</string>
+    <string name="delete_embeddings">Delete all embeddings</string>
+    <string name="select_user_for_embedding">Select user</string>
+    <string name="inference_user">User: %1$s</string>
+    <string name="start">Start</string>
+    <string name="correct_face">Could not find correct face</string>
+    <string name="persons_name">Person\'s name</string>
+    <string name="embedded_image">embedded image</string>
+    <string name="loading_status">Status of loading</string>
+    <string name="add_user_button_description">button to add user</string>
+
+</resources>

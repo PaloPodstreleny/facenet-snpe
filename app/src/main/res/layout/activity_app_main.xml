@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Main activity layout, consists of CardView -->
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+        <variable name="viewmodel" type="com.palopodstreleny.facenet.viewmodels.MainActivityViewModel"/>
+    </data>
+
+    <androidx.cardview.widget.CardView
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/faceRecognitionExample"
+            android:layout_marginTop="@dimen/padding_top_8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusable="@{viewmodel.faceNetModelAvailable}"
+            card_view:cardBackgroundColor="@{viewmodel.faceNetModelAvailable? @color/colorWhite : @color/colorGrey}"
+            card_view:cardCornerRadius="@dimen/card_corner_radius"
+            style="@style/CardViewCategories">
+
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/TextViewProjectCategories"
+                android:text="@string/face_detection_title"
+                android:drawableEnd="@{viewmodel.faceNetModelAvailable? @drawable/ic_done_black_24dp : @drawable/ic_file_download}"
+        />
+
+    </androidx.cardview.widget.CardView>
+
+
+</layout>

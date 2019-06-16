@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="padding_top_8">8dp</dimen>
+    <dimen name="padding_8">8dp</dimen>
+    <dimen name="padding_16">16dp</dimen>
+    <dimen name="margin_left_16">16dp</dimen>
+    <dimen name="margin_right_16">16dp</dimen>
+    <dimen name="toolbar_elevation">4dp</dimen>
+    <dimen name="card_corner_radius">8dp</dimen>
+    <dimen name="image_cropped_dimension">100dp</dimen>
+    <dimen name="margin_top_8">8dp</dimen>
+    <dimen name="margin_top_16">16dp</dimen>
+    <dimen name="margin_bottom_8">8dp</dimen>
+    <dimen name="margin_top_24">24dp</dimen>
+    <dimen name="margin_bottom_48">48dp</dimen>
+    <dimen name="margin_bottom_32">32dp</dimen>
+    <dimen name="margin_right_24">24dp</dimen>
+    <dimen name="margin_right_32">32dp</dimen>
+    <dimen name="margin_left_24">24dp</dimen>
+</resources>

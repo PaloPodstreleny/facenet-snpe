@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Dialog for showing item in the user embedding list -->
+<layout xmlns:tools="http://schemas.android.com/tools"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TextView
+            android:id="@+id/user_binding_tv"
+            android:padding="@dimen/padding_16"
+            tools:text="User has 12 embeddings"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+</layout>
