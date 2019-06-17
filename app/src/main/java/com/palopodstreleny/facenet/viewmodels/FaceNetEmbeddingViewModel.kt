@@ -56,7 +56,6 @@ class FaceNetEmbeddingViewModel(private val model: FaceNetGenerationModel) : Vie
     fun deleteAllEmbeddings(){
         AppExecutor.backgroundIO().execute{
             model.userDao.deleteAllUsers()
-            model.embeddingDao.deleteAllEmbeddings()
         }
     }
 

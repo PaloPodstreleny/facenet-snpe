@@ -16,9 +16,6 @@ interface EmbeddingDao {
     @Insert(onConflict = OnConflictStrategy.IGNORE)
     fun insertEmbedding(embedding: Embedding)
 
-    @Query("DELETE FROM embedding")
-    fun deleteAllEmbeddings()
-
     @Query("SELECT user_name as name, COUNT(e0) as numberOfEmbeddings FROM embedding GROUP BY user_name")
     fun getUserEmbeddingsCount(): LiveData<List<UserEmbedding>>
 

@@ -8,7 +8,7 @@ import com.palopodstreleny.facenet.db.entity.Embedding
 import com.palopodstreleny.facenet.db.entity.User
 
 
-@Database(entities = [User::class, Embedding::class], version = 2)
+@Database(entities = [User::class, Embedding::class], version = 3)
 abstract class FaceNetDB : RoomDatabase() {
     abstract fun userDao(): UserDao
     abstract fun embeddingDao(): EmbeddingDao

@@ -1,6 +1,7 @@
 package com.palopodstreleny.facenet.db.entity
 
 import androidx.room.*
+import androidx.room.ForeignKey.CASCADE
 import org.nd4j.linalg.api.ndarray.INDArray
 import org.nd4j.linalg.factory.Nd4j
 
@@ -16,7 +17,9 @@ import org.nd4j.linalg.factory.Nd4j
 @Entity(foreignKeys = [ForeignKey(
     entity = User::class,
     parentColumns = arrayOf("userName"),
-    childColumns = arrayOf("user_name"))])
+    childColumns = arrayOf("user_name"),
+    onDelete = CASCADE
+    )])
 
 data class Embedding(
 

@@ -35,7 +35,7 @@ import org.koin.dsl.module
  */
 
 const val modelName = "please.dlc"
-const val dbName = "facenetdb"
+const val dbName = "facenet_db"
 const val size = 320
 
 //Neural network module declaration
